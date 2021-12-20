@@ -6,12 +6,12 @@
 <?php  
 
 $arrayDate = [
-    '01-01-2007' => [
-          [
-            'title' => 'Post 1',
-            'author'=>'Gigi',
-            'text' => 'Text post 1',
-        ],
+    "01-01-2007" => [
+          
+        'title' => 'Post 1',
+        'author'=>'Gigi',
+        'text' => 'Text post 1',
+        
     ],
     
     "02-02-2007" => [
@@ -56,7 +56,7 @@ $arrayDate = [
          $arrayData = $arrayDate[$i];
          
 
-        echo "<h2> {$arrayData[$i]} - {$arrayData[$i]['title']}</h2>";
+        echo "<li>{$arrayDate[$i]["01-01-2007"]} - {$arrayDate[$i]['title']}</li>";
 
     }
 
