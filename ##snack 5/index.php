@@ -1,0 +1,15 @@
+
+
+<!-- Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e 
+suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo. -->
+
+
+<?php  
+
+$paragrafo = 'Lorem sldnsndvwnvwnenosnevowneoendendvsbdncodncowncowcbbdcsncmiejfiwfwebfubfubfw.Nfjenfuwbufbuwebfuiwbfckdnjnonononiowniownoiwnoivwnvoiwnownownonnioewnioninnwnenwnfenidnnfeobodsbbofsd.Mhuisbuibiububvubvubdusbvisbvibuibdubsvusbbsddsbvidbhbjksdjbcdsbvhbvisbdvdui.Lorem sldnsndvwnvwnenosnevowneoendendvsbdncodncowncowcbbdcsncmiejfiwfwebfubfubfw.Nfjenfuwbufbuwebfuiwbfckdnjnonononiowniownoiwnoivwnvoiwnownownonnioewnioninnwnenwnfenidnnfeobodsbbofsd.Nfjenfuwbufbuwebfuiwbfckdnjnonononiowniownoiwnoivwnvoiwnownownonnioewnioninnwnenwnfenidnnfeobodsbbofsd';
+
+var_dump(explode('.', $paragrafo));
+
+
+
+?>
