@@ -29,7 +29,7 @@ $arrayDate = [
         ]
     ,
     
-        "04-05-20010" => [
+        "04-05-2010" => [
         'title' => 'Post 4',
         'author'=>'Luigi',
         'text' => 'Text post 4',
@@ -48,10 +48,7 @@ $arrayDate = [
 
 
 
-echo $arrayDate["01-01-2007"][0]['title'] . ' - ' . $arrayDate["01-01-2007"][0]['author'] . ' - ' . $arrayDate["01-01-2007"][0]['text'] . "<br>";
-echo $arrayDate["02-02-2007"]['title'] . ' - ' . $arrayDate["02-02-2007"]['author'] . ' - ' . $arrayDate["02-02-2007"]['text'] . "<br>";
-echo $arrayDate["10-04-2008"]['title'] . ' - ' . $arrayDate["10-04-2008"]['author'] . ' - ' . $arrayDate["10-04-2008"]['text'] . "<br>";
-echo $arrayDate["04-05-20010"]['title'] . ' - ' . $arrayDate["04-05-20010"]['author'] . ' - ' . $arrayDate["04-05-20010"]['text'];
+
 ?>
 
 
@@ -67,19 +64,22 @@ echo $arrayDate["04-05-20010"]['title'] . ' - ' . $arrayDate["04-05-20010"]['aut
 <body>
     
     <h2></h2>
- <?php
-    $arrayDateLength = count($arrayDate);
-    echo $arrayDateLength;
+ 
+    <!-- // $arrayDateLength = count($arrayDate);
+    // echo $arrayDateLength; -->
 
-    for($i = 0; $i < $arrayDateLength; $i++){
-         $arrayData = $arrayDate[$i];
-         var_dump($arrayData);
+    <?php  foreach($arrayDate as $key => $item){ ?>
+            <ul>
+                <li><?php echo $key ?> - <?php echo $item['title'] ?> - <?php echo $item['author'] ?> - <?php echo $item['text'] ?></li>
+           </ul>
+    <?php } ?>
+    
+         
 
-        echo "<li>{$arrayData["DD-MM-YYYY"][$i]['title']} </li>";
+      
+    
 
-    }
-
- ?>
+ 
 
 </body>
 </html>
